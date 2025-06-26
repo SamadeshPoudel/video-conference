@@ -1,0 +1,12 @@
+{
+  "name": "video-conference",
+  "version": "1.0.0",
+  "description": "A simple video conferencing web application built with **React**, **Express**, and the [LiveKit](https://livekit.io/) SDK. Users can join a meeting by entering a room name and their username, and participate in real-time video calls.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "author": "",
+  "license": "ISC"
+}

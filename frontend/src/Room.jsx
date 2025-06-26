@@ -3,7 +3,10 @@ import { LiveKitRoom, VideoConference } from '@livekit/components-react';
 import { useParams, useSearchParams } from 'react-router-dom';
 import axios from 'axios';
 
-const ROOM_SERVER = 'http://192.168.1.7:3000'; // backend
+const ROOM_SERVER =
+  import.meta.env.MODE === 'development'
+    ? 'http://localhost:3000'
+    : ''; // Empty string = same origin in production
 
 function Room() {
   const { roomName } = useParams();
