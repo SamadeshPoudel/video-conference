@@ -15,7 +15,7 @@ function JoinRoom() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-100 to-blue-100 flex items-center justify-center">
       <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-md">
-        <h2 className="text-2xl font-semibold mb-6 text-center text-indigo-700">🎥 Join a Room</h2>
+        <h2 className="text-2xl font-semibold mb-6 text-center text-indigo-700">Join a Room</h2>
 
         <input
           type="text"

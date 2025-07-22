@@ -16,7 +16,6 @@ app.use(express.static(path.join(__dirname, '../frontend/dist')));
 const API_KEY = process.env.LIVEKIT_API_KEY;
 const API_SECRET = process.env.LIVEKIT_API_SECRET;
 
-app.get('/', (req, res) => res.send('Hello from backend'));
 
 app.post('/get-token', async (req, res) => {
   const { roomName, userName } = req.body;
